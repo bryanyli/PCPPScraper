@@ -1,10 +1,13 @@
 # PCPPScraper
 A simple scraper to get the components in a PCPartPicker URL, using requests and BeautifulSoup
 
+### PyPI Link: 
+https://pypi.org/project/PCPPScraper/
+
 ## To Do:
 - ~~Make a Component class with type of component, name, price, and PCPP Link and return it in getComponents~~
 - Fetch Custom Prices
-- Make pip installable?
+- ~~Make pip installable?~~
 - Suggest more in Issues
 
 ## Documentation:

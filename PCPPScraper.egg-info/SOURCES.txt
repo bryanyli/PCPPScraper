@@ -1,0 +1,10 @@
+README.md
+setup.py
+PCPPScraper/__init__.py
+PCPPScraper/pcpartpickerscraper.py
+PCPPScraper.egg-info/PKG-INFO
+PCPPScraper.egg-info/SOURCES.txt
+PCPPScraper.egg-info/dependency_links.txt
+PCPPScraper.egg-info/not-zip-safe
+PCPPScraper.egg-info/requires.txt
+PCPPScraper.egg-info/top_level.txt
