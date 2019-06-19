@@ -1,6 +1,9 @@
 # PCPPScraper
 A simple scraper to get the components in a PCPartPicker URL, using requests and BeautifulSoup
 
+### Github Link:
+https://github.com/A1phyte/PCPPScraper
+
 ### PyPI Link: 
 https://pypi.org/project/PCPPScraper/
 
