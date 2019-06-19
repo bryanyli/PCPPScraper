@@ -12,8 +12,11 @@ A simple scraper to get the components in a PCPartPicker URL, using requests and
 ### Component
 
 `self.type` = Type of component (CPU, GPU, etc.)
+
 `self.name` = Name of component (2200G, 2080 Ti, etc.)
+
 `self.link` = Link of component (https://pcpartpicker.com/product/RkJtt6/amd-ryzen-3-2200g-35ghz-quad-core-processor-yd2200c5fbbox)
+
 `self.price` = Price of component. Price is 'unknown' if there is no price or there is a custom price.
 
 ### getComponents
