@@ -21,6 +21,8 @@ def getComponents(URL : str):
         price = component.find(attrs = {'class' : 'td__price'}).find('a')
         if price == None:
             price = 'unknown'
+            if component.find(attrs = {'class' : 'td__price'}).get_text() != None:
+                price = component.find(attrs = {'class' : 'td__price'}).get_text()[5:]
         else:
             price = price.get_text()
         name = componentLink.get_text()
@@ -31,3 +33,6 @@ def getComponents(URL : str):
 
     return componentList
 
+l = getComponents('https://pcpartpicker.com/list/cm8wRJ')
+for x in l:
+    print(x.price)

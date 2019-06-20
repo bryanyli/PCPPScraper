@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PCPPScraper
-Version: 1.2
+Version: 1.3
 Summary: A simple scraper for PCPP Lists
 Home-page: https://github.com/A1phyte/PCPPScraper
 Author: Bryan Li
@@ -9,13 +9,17 @@ License: MIT
 Description: # PCPPScraper
         A simple scraper to get the components in a PCPartPicker URL, using requests and BeautifulSoup
         
+        ### Github Link:
+        https://github.com/A1phyte/PCPPScraper
+        
         ### PyPI Link: 
         https://pypi.org/project/PCPPScraper/
         
         ## To Do:
         - ~~Make a Component class with type of component, name, price, and PCPP Link and return it in getComponents~~
-        - Fetch Custom Prices
+        - ~~Fetch Custom Prices~~
         - ~~Make pip installable?~~
+        - Implement Search Method for part searching
         - Suggest more in Issues
         
         ## Documentation:

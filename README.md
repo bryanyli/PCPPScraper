@@ -9,8 +9,9 @@ https://pypi.org/project/PCPPScraper/
 
 ## To Do:
 - ~~Make a Component class with type of component, name, price, and PCPP Link and return it in getComponents~~
-- Fetch Custom Prices
+- ~~Fetch Custom Prices~~
 - ~~Make pip installable?~~
+- Implement Search Method for part searching
 - Suggest more in Issues
 
 ## Documentation:
