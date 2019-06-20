@@ -33,6 +33,28 @@ def getComponents(URL : str):
 
     return componentList
 
-l = getComponents('https://pcpartpicker.com/list/cm8wRJ')
-for x in l:
-    print(x.price)
+def searchComponents(resultCount, query):
+    query = query.replace('+', '%2B')
+    URL = 'https://pcpartpicker.com/search/?q=' + query
+    page = get(URL)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    components = soup.find_all(attrs = {'class' : 'search_results--contentWrapper'})
+    componentList = list()
+    if components == None:
+        return componentList
+    i = 0
+    
+    for component in components:
+        nameAndLink = component.find(attrs = {'class' : 'search_results--link'})
+        name = nameAndLink.find('a').get_text()
+        link = 'https://pcpartpicker.com' + nameAndLink.find('a').get('href')
+        price = component.find(attrs = {'class' : 'search_results--price'}).find('a').get_text()
+        if price == None:
+            price = 'unknown'
+        newComponent = Component('unknown', name, link, price)
+        componentList.append(newComponent)
+        i+=1
+        if i >= resultCount:
+            break
+
+    return componentList

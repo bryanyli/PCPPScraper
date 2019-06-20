@@ -1,13 +1,13 @@
 Metadata-Version: 2.1
 Name: PCPPScraper
-Version: 1.3
+Version: 1.4
 Summary: A simple scraper for PCPP Lists
 Home-page: https://github.com/A1phyte/PCPPScraper
 Author: Bryan Li
 Author-email: bryanyuezhouli@gmail.com
 License: MIT
 Description: # PCPPScraper
-        A simple scraper to get the components in a PCPartPicker URL, using requests and BeautifulSoup
+        A simple scraper to get some information from PCPartPicker, using requests and BeautifulSoup4
         
         ### Github Link:
         https://github.com/A1phyte/PCPPScraper
@@ -19,7 +19,8 @@ Description: # PCPPScraper
         - ~~Make a Component class with type of component, name, price, and PCPP Link and return it in getComponents~~
         - ~~Fetch Custom Prices~~
         - ~~Make pip installable?~~
-        - Implement Search Method for part searching
+        - ~~Implement Search Method for part searching~~
+        - Get component type in searchComponents
         - Suggest more in Issues
         
         ## Documentation:
@@ -38,7 +39,16 @@ Description: # PCPPScraper
         
         `getComponents(URL : str)`
         
-        Returns a list of class Component.
+        Gets components from PCPartPicker List URL
         
+        Returns a list of Component objects.
+        
+        ### searchComponents
+        
+        `searchComponents(resultCount, query)`
+        
+        Searches for components in PCPartPicker product search
+        
+        Returns a list of Component objects 
 Platform: UNKNOWN
 Description-Content-Type: text/markdown
