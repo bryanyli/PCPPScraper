@@ -51,7 +51,11 @@ def searchComponents(resultCount, query):
         price = component.find(attrs = {'class' : 'search_results--price'}).find('a').get_text()
         if price == None:
             price = 'unknown'
-        newComponent = Component('unknown', name, link, price)
+        componentPage = get(link)
+        typeSoup = BeautifulSoup(componentPage.content, 'html.parser')
+        componentType = typeSoup.find(attrs= {'class' : 'pageTitle--categoryTitle'}).find('a').get_text()
+        
+        newComponent = Component(componentType, name, link, price)
         componentList.append(newComponent)
         i+=1
         if i >= resultCount:

@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(name='PCPPScraper',
-    version='1.4',
+    version='1.5',
     description='A simple scraper for PCPP Lists',
     long_description=long_description,
     long_description_content_type="text/markdown",
